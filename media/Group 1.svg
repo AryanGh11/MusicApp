@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="112" height="32" viewBox="0 0 112 32">
+  <g id="Group_1" data-name="Group 1" transform="translate(-140 -360)">
+    <circle id="Ellipse_1" data-name="Ellipse 1" cx="16" cy="16" r="16" transform="translate(140 360)" fill="#fff"/>
+    <text id="Music_App" data-name="Music App" transform="translate(179 381)" fill="#fff" font-size="14" font-family="Poppins-Regular, Poppins"><tspan x="0" y="0">Music App</tspan></text>
+    <path id="Polygon_1" data-name="Polygon 1" d="M6.422,7.155a4,4,0,0,1,7.155,0l3.528,7.056A4,4,0,0,1,13.528,20H6.472a4,4,0,0,1-3.578-5.789Z" transform="translate(170 366) rotate(90)" fill="#151515"/>
+  </g>
+</svg>

@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 100%;
+}
+@media screen and (max-width: 400px) {
+    body {
+        background-color: #151515;
+        padding: 0 2rem 0;
+    }
+    .home-page {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .app-logo {
+        margin-top: 2.5rem;
+    }
+    .menu-bar {
+        display: flex;
+        flex-direction: row;
+        width: 100vw;
+        background-color: #151515;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        justify-content: space-between;
+        padding: 2.5rem 2rem 2.5rem 2rem;
+    }
+    .menu-bar i {
+        color: #ffff;
+        font-size: 24px;
+    }
+    .musics {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 2rem;
+    }
+    .music {
+        background-color: #252525;
+        width: 100%;
+        height: 3.5rem;
+        border-radius: 16px;
+        margin-top: .5rem;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        padding: .75rem;
+    }
+    .music-num1 {
+        margin-top: 0;
+    }
+    .music-text {
+        display: flex;
+        flex-direction: column;
+        font-size: 14px;
+        padding-left: .5rem;
+        color: #ffff;
+    }
+    .music-btns {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+    .music-img {
+        width: 2rem;
+        height: 2rem;
+        border-radius: .5rem;
+    }
+    .music-btns i {
+        color: #FF3D3D;
+        font-size: 1rem;
+        align-items: center;
+    }
+    .heart-btn {
+        margin-right: .75rem;
+    }
+    .music-singer {
+        font-size: 11px;
+        opacity: 52%;
+    }
+    .music-text-img {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+    .waiter {
+        position: absolute;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: blue;
+        animation: waiter 1s;
+    }
+    @keyframes waiter {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 100%;
+        }
+    }
+}
