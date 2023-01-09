@@ -6,7 +6,7 @@
     font-family: 'Poppins', sans-serif;
     font-size: 100%;
 }
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 1280px) {
     body {
         background-color: #151515;
         padding: 0 2rem 0;
