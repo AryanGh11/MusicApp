@@ -84,16 +84,6 @@ playBtn1.addEventListener("click", () => {
     stopBtn.addEventListener("click", () => {
         document.querySelectorAll("audio").forEach(el => el.pause());
     })
-
-    const pauseBtn = document.createElement("button");
-    const pauseBtnContent = document.createTextNode("Pause");
-    const mainDiv = document.querySelector(".home-page");
-    pauseBtn.appendChild(pauseBtnContent);
-    mainDiv.appendChild(pauseBtn);
-    pauseBtn.classList.add("pause-btn");
-    pauseBtn.addEventListener("click", () => {
-
-    })
     const pauseBtnMusic1 = document.querySelector(".pause-btn2");
     pauseBtnMusic1.style.display = "block";
 })
