@@ -83,9 +83,18 @@ playBtn1.addEventListener("click", () => {
     stopBtn.classList.add("stop-btn");
     stopBtn.addEventListener("click", () => {
         document.querySelectorAll("audio").forEach(el => el.pause());
+        if(music.paused) {
+            stopBtn.style.display = "none"
+        }
     })
-    const pauseBtnMusic1 = document.querySelector(".pause-btn2");
+    const pauseBtnMusic1 = document.querySelector(".pause-btn1");
     pauseBtnMusic1.style.display = "block";
+    pauseBtnMusic1.addEventListener("click", () => {
+        document.querySelectorAll("audio").forEach(el => el.pause());
+        if(music.paused) {
+            pauseBtnMusic1.style.display = "none";
+        }
+    })
 })
 playBtn2.addEventListener("click", () => {
     document.querySelectorAll("audio").forEach(el => el.pause());    
@@ -99,6 +108,17 @@ playBtn2.addEventListener("click", () => {
     stopBtn.classList.add("stop-btn");
     stopBtn.addEventListener("click", () => {
         document.querySelectorAll("audio").forEach(el => el.pause());
+        if(music.paused) {
+            stopBtn.style.display = "none"
+        }
+    })
+    const pauseBtnMusic2 = document.querySelector(".pause-btn2");
+    pauseBtnMusic2.style.display = "block";
+    pauseBtnMusic2.addEventListener("click", () => {
+        document.querySelectorAll("audio").forEach(el => el.pause());
+        if(music.paused) {
+            pauseBtnMusic2.style.display = "none";
+        }
     })
 })
 playBtn3.addEventListener("click", () => {
@@ -113,6 +133,17 @@ playBtn3.addEventListener("click", () => {
     stopBtn.classList.add("stop-btn");
     stopBtn.addEventListener("click", () => {
         document.querySelectorAll("audio").forEach(el => el.pause());
+        if(music.paused) {
+            stopBtn.style.display = "none"
+        }
+    })
+    const pauseBtnMusic3 = document.querySelector(".pause-btn3");
+    pauseBtnMusic3.style.display = "block";
+    pauseBtnMusic3.addEventListener("click", () => {
+        document.querySelectorAll("audio").forEach(el => el.pause());
+        if(music.paused) {
+            pauseBtnMusic3.style.display = "none";
+        }
     })
 })
 playBtn4.addEventListener("click", () => {
@@ -127,6 +158,17 @@ playBtn4.addEventListener("click", () => {
     stopBtn.classList.add("stop-btn");
     stopBtn.addEventListener("click", () => {
         document.querySelectorAll("audio").forEach(el => el.pause());
+        if(music.paused) {
+            stopBtn.style.display = "none"
+        }
+    })
+    const pauseBtnMusic4 = document.querySelector(".pause-btn4");
+    pauseBtnMusic4.style.display = "block";
+    pauseBtnMusic4.addEventListener("click", () => {
+        document.querySelectorAll("audio").forEach(el => el.pause());
+        if(music.paused) {
+            pauseBtnMusic4.style.display = "none";
+        }
     })
 })
 playBtn5.addEventListener("click", () => {
@@ -141,6 +183,17 @@ playBtn5.addEventListener("click", () => {
     stopBtn.classList.add("stop-btn");
     stopBtn.addEventListener("click", () => {
         document.querySelectorAll("audio").forEach(el => el.pause());
+        if(music.paused) {
+            stopBtn.style.display = "none"
+        }
+    })
+    const pauseBtnMusic5 = document.querySelector(".pause-btn5");
+    pauseBtnMusic5.style.display = "block";
+    pauseBtnMusic5.addEventListener("click", () => {
+        document.querySelectorAll("audio").forEach(el => el.pause());
+        if(music.paused) {
+            pauseBtnMusic5.style.display = "none";
+        }
     })
 })
 playBtn6.addEventListener("click", () => {
@@ -155,6 +208,17 @@ playBtn6.addEventListener("click", () => {
     stopBtn.classList.add("stop-btn");
     stopBtn.addEventListener("click", () => {
         document.querySelectorAll("audio").forEach(el => el.pause());
+        if(music.paused) {
+            stopBtn.style.display = "none"
+        }
+    })
+    const pauseBtnMusic6 = document.querySelector(".pause-btn6");
+    pauseBtnMusic6.style.display = "block";
+    pauseBtnMusic6.addEventListener("click", () => {
+        document.querySelectorAll("audio").forEach(el => el.pause());
+        if(music.paused) {
+            pauseBtnMusic6.style.display = "none";
+        }
     })
 })
 playBtn7.addEventListener("click", () => {
@@ -169,6 +233,17 @@ playBtn7.addEventListener("click", () => {
     stopBtn.classList.add("stop-btn");
     stopBtn.addEventListener("click", () => {
         document.querySelectorAll("audio").forEach(el => el.pause());
+        if(music.paused) {
+            stopBtn.style.display = "none"
+        }
+    })
+    const pauseBtnMusic7 = document.querySelector(".pause-btn7");
+    pauseBtnMusic7.style.display = "block";
+    pauseBtnMusic7.addEventListener("click", () => {
+        document.querySelectorAll("audio").forEach(el => el.pause());
+        if(music.paused) {
+            pauseBtnMusic7.style.display = "none";
+        }
     })
 })
 playBtn8.addEventListener("click", () => {
@@ -183,6 +258,17 @@ playBtn8.addEventListener("click", () => {
     stopBtn.classList.add("stop-btn");
     stopBtn.addEventListener("click", () => {
         document.querySelectorAll("audio").forEach(el => el.pause());
+        if(music.paused) {
+            stopBtn.style.display = "none"
+        }
+    })
+    const pauseBtnMusic8 = document.querySelector(".pause-btn8");
+    pauseBtnMusic8.style.display = "block";
+    pauseBtnMusic8.addEventListener("click", () => {
+        document.querySelectorAll("audio").forEach(el => el.pause());
+        if(music.paused) {
+            pauseBtnMusic8.style.display = "none";
+        }
     })
 })
 playBtn9.addEventListener("click", () => {
@@ -197,6 +283,17 @@ playBtn9.addEventListener("click", () => {
     stopBtn.classList.add("stop-btn");
     stopBtn.addEventListener("click", () => {
         document.querySelectorAll("audio").forEach(el => el.pause());
+        if(music.paused) {
+            stopBtn.style.display = "none"
+        }
+    })
+    const pauseBtnMusic9 = document.querySelector(".pause-btn9");
+    pauseBtnMusic9.style.display = "block";
+    pauseBtnMusic9.addEventListener("click", () => {
+        document.querySelectorAll("audio").forEach(el => el.pause());
+        if(music.paused) {
+            pauseBtnMusic9.style.display = "none";
+        }
     })
 })
 playBtn10.addEventListener("click", () => {
@@ -211,6 +308,17 @@ playBtn10.addEventListener("click", () => {
     stopBtn.classList.add("stop-btn");
     stopBtn.addEventListener("click", () => {
         document.querySelectorAll("audio").forEach(el => el.pause());
+        if(music.paused) {
+            stopBtn.style.display = "none"
+        }
+    })
+    const pauseBtnMusic10 = document.querySelector(".pause-btn10");
+    pauseBtnMusic10.style.display = "block";
+    pauseBtnMusic10.addEventListener("click", () => {
+        document.querySelectorAll("audio").forEach(el => el.pause());
+        if(music.paused) {
+            pauseBtnMusic10.style.display = "none";
+        }
     })
 })
 playBtn11.addEventListener("click", () => {
@@ -225,6 +333,17 @@ playBtn11.addEventListener("click", () => {
     stopBtn.classList.add("stop-btn");
     stopBtn.addEventListener("click", () => {
         document.querySelectorAll("audio").forEach(el => el.pause());
+        if(music.paused) {
+            stopBtn.style.display = "none"
+        }
+    })
+    const pauseBtnMusic11 = document.querySelector(".pause-btn11");
+    pauseBtnMusic11.style.display = "block";
+    pauseBtnMusic11.addEventListener("click", () => {
+        document.querySelectorAll("audio").forEach(el => el.pause());
+        if(music.paused) {
+            pauseBtnMusic11.style.display = "none";
+        }
     })
 })
 playBtn12.addEventListener("click", () => {
@@ -239,11 +358,22 @@ playBtn12.addEventListener("click", () => {
     stopBtn.classList.add("stop-btn");
     stopBtn.addEventListener("click", () => {
         document.querySelectorAll("audio").forEach(el => el.pause());
+        if(music.paused) {
+            stopBtn.style.display = "none"
+        }
+    })
+    const pauseBtnMusic12 = document.querySelector(".pause-btn12");
+    pauseBtnMusic12.style.display = "block";
+    pauseBtnMusic12.addEventListener("click", () => {
+        document.querySelectorAll("audio").forEach(el => el.pause());
+        if(music.paused) {
+            pauseBtnMusic12.style.display = "none";
+        }
     })
 })
 playBtn13.addEventListener("click", () => {
     document.querySelectorAll("audio").forEach(el => el.pause());
-    const music = document.querySelector(".happier-than-ever");
+    const music = document.querySelector(".unholy");
     music.play();
     const stopBtn = document.createElement("button");
     const stopBtnContent = document.createTextNode("Stop");
@@ -253,6 +383,17 @@ playBtn13.addEventListener("click", () => {
     stopBtn.classList.add("stop-btn");
     stopBtn.addEventListener("click", () => {
         document.querySelectorAll("audio").forEach(el => el.pause());
+        if(music.paused) {
+            stopBtn.style.display = "none"
+        }
+    })
+    const pauseBtnMusic13 = document.querySelector(".pause-btn13");
+    pauseBtnMusic13.style.display = "block";
+    pauseBtnMusic13.addEventListener("click", () => {
+        document.querySelectorAll("audio").forEach(el => el.pause());
+        if(music.paused) {
+            pauseBtnMusic13.style.display = "none";
+        }
     })
 })
 playBtn14.addEventListener("click", () => {
@@ -267,6 +408,17 @@ playBtn14.addEventListener("click", () => {
     stopBtn.classList.add("stop-btn");
     stopBtn.addEventListener("click", () => {
         document.querySelectorAll("audio").forEach(el => el.pause());
+        if(music.paused) {
+            stopBtn.style.display = "none"
+        }
+    })
+    const pauseBtnMusic14 = document.querySelector(".pause-btn1");
+    pauseBtnMusic14.style.display = "block";
+    pauseBtnMusic14.addEventListener("click", () => {
+        document.querySelectorAll("audio").forEach(el => el.pause());
+        if(music.paused) {
+            pauseBtnMusic1.style.display = "none";
+        }
     })
 });
 
