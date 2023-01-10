@@ -1,6 +1,6 @@
 {
     "short_name": "Music App",
-    "name": "Music App build by AryanGh",
+    "name": "A simple app for you",
     "description": "Have enjoy...",
     "icons": [
       {
@@ -10,18 +10,18 @@
       }
     ],
     "start_url": "./index.html",
-    "display": "standalone",
+    "display": "fullscreen",
     "orientation": "portrait",
     "theme_color": "#151515",
     "background_color": "#151515",
     "screenshots": [
       {
-        "src": "./media/logo.png",
+        "src": "./media/Group 2.png",
         "type": "image/png",
         "sizes": "540x720"
       },
       {
-        "src": "./media/logo.png",
+        "src": "./media/Group 2.png",
         "type": "image/jpg",
         "sizes": "540x720"
       }
