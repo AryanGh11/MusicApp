@@ -272,5 +272,5 @@ playBtn14.addEventListener("click", () => {
 
 const scrollBtn = document.querySelector(".app-logo");
 scrollBtn.addEventListener("click", () => {
-    window.scrollBy(0, -100);
+    window.scrollBy(0, -100000);
 });
