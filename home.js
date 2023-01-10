@@ -72,6 +72,7 @@ const playBtn13 = document.querySelector(".play-btn13");
 const playBtn14 = document.querySelector(".play-btn14");
 
 playBtn1.addEventListener("click", () => {
+    document.querySelectorAll("audio").forEach(el => el.pause());    
     const music = document.querySelector(".happier-than-ever");
     music.play();
     const stopBtn = document.createElement("button");
@@ -83,8 +84,21 @@ playBtn1.addEventListener("click", () => {
     stopBtn.addEventListener("click", () => {
         document.querySelectorAll("audio").forEach(el => el.pause());
     })
+
+    const pauseBtn = document.createElement("button");
+    const pauseBtnContent = document.createTextNode("Pause");
+    const mainDiv = document.querySelector(".home-page");
+    pauseBtn.appendChild(pauseBtnContent);
+    mainDiv.appendChild(pauseBtn);
+    pauseBtn.classList.add("pause-btn");
+    pauseBtn.addEventListener("click", () => {
+
+    })
+    const pauseBtnMusic1 = document.querySelector(".pause-btn2");
+    pauseBtnMusic1.style.display = "block";
 })
 playBtn2.addEventListener("click", () => {
+    document.querySelectorAll("audio").forEach(el => el.pause());    
     const music = document.querySelector(".lovely");
     music.play();
     const stopBtn = document.createElement("button");
@@ -98,6 +112,7 @@ playBtn2.addEventListener("click", () => {
     })
 })
 playBtn3.addEventListener("click", () => {
+    document.querySelectorAll("audio").forEach(el => el.pause());
     const music = document.querySelector(".love-yourself");
     music.play();
     const stopBtn = document.createElement("button");
@@ -111,6 +126,7 @@ playBtn3.addEventListener("click", () => {
     })
 })
 playBtn4.addEventListener("click", () => {
+    document.querySelectorAll("audio").forEach(el => el.pause());
     const music = document.querySelector(".positions");
     music.play();
     const stopBtn = document.createElement("button");
@@ -124,6 +140,7 @@ playBtn4.addEventListener("click", () => {
     })
 })
 playBtn5.addEventListener("click", () => {
+    document.querySelectorAll("audio").forEach(el => el.pause());
     const music = document.querySelector(".one-last-time");
     music.play();
     const stopBtn = document.createElement("button");
@@ -137,6 +154,7 @@ playBtn5.addEventListener("click", () => {
     })
 })
 playBtn6.addEventListener("click", () => {
+    document.querySelectorAll("audio").forEach(el => el.pause());
     const music = document.querySelector(".coast");
     music.play();
     const stopBtn = document.createElement("button");
@@ -150,6 +168,7 @@ playBtn6.addEventListener("click", () => {
     })
 })
 playBtn7.addEventListener("click", () => {
+    document.querySelectorAll("audio").forEach(el => el.pause());
     const music = document.querySelector(".mistletoe");
     music.play();
     const stopBtn = document.createElement("button");
@@ -163,6 +182,7 @@ playBtn7.addEventListener("click", () => {
     })
 })
 playBtn8.addEventListener("click", () => {
+    document.querySelectorAll("audio").forEach(el => el.pause());
     const music = document.querySelector(".middle-of-the-night");
     music.play();
     const stopBtn = document.createElement("button");
@@ -176,6 +196,7 @@ playBtn8.addEventListener("click", () => {
     })
 })
 playBtn9.addEventListener("click", () => {
+    document.querySelectorAll("audio").forEach(el => el.pause());
     const music = document.querySelector(".anti-hero");
     music.play();
     const stopBtn = document.createElement("button");
@@ -189,6 +210,7 @@ playBtn9.addEventListener("click", () => {
     })
 })
 playBtn10.addEventListener("click", () => {
+    document.querySelectorAll("audio").forEach(el => el.pause());
     const music = document.querySelector(".i-love-you");
     music.play();
     const stopBtn = document.createElement("button");
@@ -202,6 +224,7 @@ playBtn10.addEventListener("click", () => {
     })
 })
 playBtn11.addEventListener("click", () => {
+    document.querySelectorAll("audio").forEach(el => el.pause());
     const music = document.querySelector(".dont-blame-me");
     music.play();
     const stopBtn = document.createElement("button");
@@ -215,6 +238,7 @@ playBtn11.addEventListener("click", () => {
     })
 })
 playBtn12.addEventListener("click", () => {
+    document.querySelectorAll("audio").forEach(el => el.pause());
     const music = document.querySelector(".blank-space");
     music.play();
     const stopBtn = document.createElement("button");
@@ -228,6 +252,7 @@ playBtn12.addEventListener("click", () => {
     })
 })
 playBtn13.addEventListener("click", () => {
+    document.querySelectorAll("audio").forEach(el => el.pause());
     const music = document.querySelector(".happier-than-ever");
     music.play();
     const stopBtn = document.createElement("button");
@@ -241,6 +266,7 @@ playBtn13.addEventListener("click", () => {
     })
 })
 playBtn14.addEventListener("click", () => {
+    document.querySelectorAll("audio").forEach(el => el.pause());
     const music = document.querySelector(".happier-than-ever");
     music.play();
     const stopBtn = document.createElement("button");
@@ -252,4 +278,9 @@ playBtn14.addEventListener("click", () => {
     stopBtn.addEventListener("click", () => {
         document.querySelectorAll("audio").forEach(el => el.pause());
     })
-})
+});
+
+const scrollBtn = document.querySelector(".app-logo");
+scrollBtn.addEventListener("click", () => {
+    window.scrollBy(0, -100);
+});

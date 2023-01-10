@@ -7,9 +7,13 @@
     font-size: 100%;
 }
 @media screen and (max-width: 460px) {
+    html {
+        scroll-behavior: smooth;
+    }         
     body {
         background-color: #151515;
         padding: 0 1rem 0;
+        user-zoom: none;
     }
     .home-page {
         display: flex;
@@ -18,7 +22,21 @@
         align-items: center;
     }
     .app-logo {
-        margin-top: 2.5rem;
+        background-color: #151515;
+        position: fixed;
+        width: 100%;
+        height: 4rem;
+        top: 0;
+        display: flex;
+        text-align: center;
+        z-index: +1;
+    }
+    .app-logo img {
+        position: fixed;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 1rem;
+        
     }
     .menu-bar {
         display: flex;
@@ -39,7 +57,7 @@
         display: flex;
         flex-direction: column;
         width: 100%;
-        margin-top: 2rem;
+        margin-top: 4rem;
     }
     .music {
         background-color: #252525;
@@ -102,12 +120,40 @@
         color: #ffff;
         animation: stop-btn .5s;
     }
+    .home-page p {
+        user-select: none;
+    }
+    .pause-btn {
+        width: 5rem;
+        height: 5rem;
+        background-color: blue;
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        color: white;
+    }
+    .pause-btn2 {
+        display: none;
+        animation: pause-btn2 .22s;
+        margin-right: .5rem;
+        z-index: 0;
+        color: white;
+        font-size: 2rem;
+    }
     @keyframes stop-btn {
         0% {
             right: -10rem;
         }
         100% {
             right: 1rem;
+        }
+    }
+    @keyframes pause-btn2 {
+        0% {
+            margin-right: 0;
+        }
+        100% {
+            margin-right: .5rem;
         }
     }
 }
