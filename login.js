@@ -1,58 +1,33 @@
 const username = document.querySelector(".username");
 const password = document.querySelector(".password");
-const loginBtn = document.querySelector(".login-btn");
-const signupBtn = document.querySelector(".signup-btn");
-const appLogo = document.querySelector(".app-logo");
-const hiddenLogin = document.querySelector(".hidden-login");
+const login = document.querySelector(".login");
+const createAccount = document.querySelector(".create-account");
 
-loginBtn.addEventListener("click", () => {
+login.addEventListener("click", () => {
     const usernameValue = username.value;
     const passwordValue = password.value;
-    const adminUsername = "AryanGh";
-    const adminPassword = "aryangh11";
-    const guestUser = "user";
-    const guestPassword = "123456";
-    if(usernameValue === adminUsername && passwordValue === adminPassword) {
-        window.location = "./home.html";
-    }
-    if(usernameValue === adminUsername && passwordValue != adminPassword) {
+    if(usernameValue === "" || passwordValue === ""){
         swal({
-            title: "Passsword wrong!",
-            text: "Please try again.",
+            title: "Empty informations",
+            text: "Please inter your username and password",
             icon: "warning",
             button: "Ok",
             className: "swal-btn"
         });
-        password.value = "";
+    } 
+    if(usernameValue === "AryanGh" && passwordValue === "@AryanGholami11") {
+        window.location = "./home.html"
     }
-    if(usernameValue === guestUser && passwordValue === guestPassword) {
-        window.location = "./home.html";
+    if(usernameValue === "user" && passwordValue === "123456") {
+        window.location = "./home.html"
     }
     else {
-        const error = swal({
-            title: "You don't have an account!",
-            text: "Please create an account first.",
+        swal({
+            title: "You don't have an account",
+            text: "Please create an account first, contact AryanGh",
             icon: "warning",
             button: "Ok",
             className: "swal-btn"
         });
-        username.value = "";
-        password.value = "";
     }
-})
-signupBtn.addEventListener("click", () => {
-    swal({
-        title: "Sign up",
-        text: "For Sign up and Login to app, please contact Aryan!",
-        button: "Ok",
-        className: "swal-btn"
-    });
-})
-appLogo.addEventListener("click", () => {
-    playMusic = document.querySelector(".my-hidden");
-    playMusic.currentTime = 0;
-    playMusic.play();
-})
-hiddenLogin.addEventListener("click", () => {
-    window.location = "./home.html";
 })

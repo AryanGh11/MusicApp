@@ -3,245 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <link rel="stylesheet" href="./styles/home.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">    
+    <link href="https://fonts.cdnfonts.com/css/gotham" rel="stylesheet">
     <link rel="manifest" href="./manifest.json">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/9f7b658210.js" crossorigin="anonymous"></script>
     <title>Music App</title>
 </head>
 <body>
-    <div class="home-page">
-        <div class="app-logo">
-            <img src="./media/Group 1.svg" alt="">
+    <nav class="nav-bar">
+        <img src="./media/logo/outline - logo.png" class="app-logo" alt="logo">
+        <input type="text" placeholder="&#xF002;  What are you looking for...?" style="font-family: Gotham Thin, FontAwesome" class="search-input" />    
+    </nav>
+    <div class="content">
+        <div class="more">
+            <p class="more-text">On Top</p>
+            <p class="more-btn">More</p>
         </div>
-        <div class="musics">
-            <div class="music music-num1">
-                <div class="music-btns">
-                    <i class="fa-solid fa-play play-btn play-btn1"></i>
-                    <i class="ri-pause-mini-line pause-btn pause-btn1"></i>
-                    <i class="fa-regular fa-heart heart-btn heart-btn1"></i>
-                </div>
-                <div class="music-text-img">
-                    <div class="music-text">
-                        <p class="music-title music-title1">Happier than ever</p>
-                        <p class="music-singer music-singer1">Billie Eilish</p>    
-                    </div>
-                    <img src="https://i.redd.it/9oc3uwhbsrv61.jpg" alt="Billie Eilish" class="music-img music-img1">
-                </div>
-                <audio src="https://dl.baarzesh.net/music/2021/7/Billie_Eilish_Happier_Than_Ever320.mp3" class="happier-than-ever"></audio>
-            </div>
-            <div class="music music-num2">
-                <div class="music-btns">
-                    <i class="fa-solid fa-play play-btn play-btn2"></i>
-                    <i class="ri-pause-mini-line pause-btn pause-btn2"></i>
-                    <i class="fa-regular fa-heart heart-btn heart-btn2"></i>    
-                </div>
-                <div class="music-text-img">
-                    <div class="music-text">
-                        <p class="music-title music-title2">Lovely (with Khalid)</p>
-                        <p class="music-singer music-singer2">Billie Eilish</p>    
-                    </div>
-                    <img src="https://upload.wikimedia.org/wikipedia/en/f/fa/Billie_Eilish_and_Khalid_-_Lovely.png" alt="Billie Eilish" class="music-img music-img1">
-                </div>
-                <audio src="https://files.musicfeed.ir/2020/04/Billie-Eilish-Khalid-lovely.mp3" class="lovely-audio"></audio>
-            </div>
-            <div class="music music-num3">
-                <div class="music-btns">
-                    <i class="fa-solid fa-play play-btn play-btn3"></i>
-                    <i class="ri-pause-mini-line pause-btn pause-btn3"></i>
-                    <i class="fa-regular fa-heart heart-btn heart-btn3"></i>    
-                </div>
-                <div class="music-text-img">
-                    <div class="music-text">
-                        <p class="music-title music-title3">Love yourself</p>
-                        <p class="music-singer music-singer3">Justin Bieber</p>    
-                    </div>
-                    <img src="https://upload.wikimedia.org/wikipedia/en/0/0b/JustinBieberLoveYourself.png" alt="Billie Eilish" class="music-img music-img1">
-                </div>
-                <audio src="https://files.musicfeed.ir/2019/03/Love-Yourself.mp3" class="love-yourself"></audio>
-            </div>
-            <div class="music music-num4">
-                <div class="music-btns">
-                    <i class="fa-solid fa-play play-btn play-btn4"></i>
-                    <i class="ri-pause-mini-line pause-btn pause-btn4"></i>
-                    <i class="fa-regular fa-heart heart-btn heart-btn4"></i>    
-                </div>
-                <div class="music-text-img">
-                    <div class="music-text">
-                        <p class="music-title music-title4">Positions</p>
-                        <p class="music-singer music-singer4">Ariana Grande</p>    
-                    </div>
-                    <img src="https://m.media-amazon.com/images/I/41RmHA6ABiL._UXNaN_FMjpg_QL85_.jpg" alt="Billie Eilish" class="music-img music-img1">
-                </div>
-                <audio src="https://dl.musiceman.net/Music/2020/12/24/Ariana-Grande-positions-(320).mp3" class="positions"></audio>
-            </div>
-            <div class="music music-num5">
-                <div class="music-btns">
-                    <i class="fa-solid fa-play play-btn play-btn5"></i>
-                    <i class="ri-pause-mini-line pause-btn pause-btn5"></i>
-                    <i class="fa-regular fa-heart heart-btn heart-btn5"></i>    
-                </div>
-                <div class="music-text-img">
-                    <div class="music-text">
-                        <p class="music-title music-title5">One last time</p>
-                        <p class="music-singer music-singer5">Ariana Grande</p>    
-                    </div>
-                    <img src="https://i.scdn.co/image/ab67616d0000b273deec12a28d1e336c5052e9aa" alt="Billie Eilish" class="music-img music-img1">
-                </div>
-                <audio src="https://ts2.tarafdari.com/contents/user6984/content-sound/04_one_last_time.mp3" class="one-last-time"></audio>
-            </div>
-            <div class="music music-num6">
-                <div class="music-btns">
-                    <i class="fa-solid fa-play play-btn play-btn6"></i>
-                    <i class="ri-pause-mini-line pause-btn pause-btn6"></i>
-                    <i class="fa-regular fa-heart heart-btn heart-btn6"></i>    
-                </div>
-                <div class="music-text-img">
-                    <div class="music-text">
-                        <p class="music-title music-title6">Coast</p>
-                        <p class="music-singer music-singer6">Hailee Steinfeld</p>    
-                    </div>
-                    <img src="https://i.scdn.co/image/ab67616d00001e02f5397a412658c978232a1c10" alt="Billie Eilish" class="music-img music-img1">
-                </div>
-                <audio src="https://dl.vipremix.ir/Downloads/POP/Hailee%20Steinfeld%20-%20Coast%20320%20[WWW.VIPREMIX.IR].mp3" class="coast"></audio>
-            </div>
-            <div class="music music-num7">
-                <div class="music-btns">
-                    <i class="fa-solid fa-play play-btn play-btn7"></i>
-                    <i class="ri-pause-mini-line pause-btn pause-btn7"></i>
-                    <i class="fa-regular fa-heart heart-btn heart-btn7"></i>    
-                </div>
-                <div class="music-text-img">
-                    <div class="music-text">
-                        <p class="music-title music-title7">Mistletoe</p>
-                        <p class="music-singer music-singer7">Justin Bieber</p>    
-                    </div>
-                    <img src="https://m.media-amazon.com/images/I/51erpaKJA9L._SY450_.jpg" alt="Billie Eilish" class="music-img music-img1">
-                </div>
-                <audio src="https://ts4.tarafdari.com/contents/user621913/content-sound/justin_bieber_-_mistletoe_official_music_video.mp3" class="mistletoe"></audio>
-            </div>
-            <div class="music music-num8">
-                <div class="music-btns">
-                    <i class="fa-solid fa-play play-btn play-btn8"></i>
-                    <i class="ri-pause-mini-line pause-btn pause-btn8"></i>
-                    <i class="fa-regular fa-heart heart-btn heart-btn8"></i>    
-                </div>
-                <div class="music-text-img">
-                    <div class="music-text">
-                        <p class="music-title music-title8">Middle of the night</p>
-                        <p class="music-singer music-singer8">Elley Duhe</p>    
-                    </div>
-                    <img src="https://i.scdn.co/image/ab67616d0000b27353a2e11c1bde700722fecd2e" alt="Billie Eilish" class="music-img music-img1">
-                </div>
-                <audio src="https://ts11.tarafdari.com/contents/user273832/content-sound/elley-duhe-middle-of-the-night-320.mp3" class="middle-of-the-night"></audio>
-            </div>
-            <div class="music music-num9">
-                <div class="music-btns">
-                    <i class="fa-solid fa-play play-btn play-btn9"></i>
-                    <i class="ri-pause-mini-line pause-btn pause-btn9"></i>
-                    <i class="fa-regular fa-heart heart-btn heart-btn9"></i>    
-                </div>
-                <div class="music-text-img">
-                    <div class="music-text">
-                        <p class="music-title music-title9">Anti hero</p>
-                        <p class="music-singer music-singer9">Taylor Swift</p>    
-                    </div>
-                    <img src="https://i.scdn.co/image/ab67616d0000b273427ee2ecbd5e20c63e88c9d2" alt="Billie Eilish" class="music-img music-img1">
-                </div>
-                <audio src="https://www.tarafdari.com/sites/default/files/contents/user697507/content-sound/taylor_swift_-_anti-hero_ft._bleachers_-_single.mp3" class="anti-hero"></audio>
-            </div>
-            <div class="music music-num10">
-                <div class="music-btns">
-                    <i class="fa-solid fa-play play-btn play-btn10"></i>
-                    <i class="ri-pause-mini-line pause-btn pause-btn10"></i>
-                    <i class="fa-regular fa-heart heart-btn heart-btn10"></i>    
-                </div>
-                <div class="music-text-img">
-                    <div class="music-text">
-                        <p class="music-title music-title10">I love you</p>
-                        <p class="music-singer music-singer10">Billie Eilish</p>    
-                    </div>
-                    <img src="https://i.scdn.co/image/ab67616d0000b27350a3147b4edd7701a876c6ce" alt="Billie Eilish" class="music-img music-img1">
-                </div>
-                <audio src="https://dl.resamusic.ir/%DB%B0%DB%B1/%DB%B3/Billie%20Eilish%20-%20I%20Love%20You%20(320).mp3" class="i-love-you"></audio>
-            </div>
-            <div class="music music-num11">
-                <div class="music-btns">
-                    <i class="fa-solid fa-play play-btn play-btn11"></i>
-                    <i class="ri-pause-mini-line pause-btn pause-btn11"></i>
-                    <i class="fa-regular fa-heart heart-btn heart-btn11"></i>    
-                </div>
-                <div class="music-text-img">
-                    <div class="music-text">
-                        <p class="music-title music-title11">Don't blame me</p>
-                        <p class="music-singer music-singer11">Taylor Swift</p>    
-                    </div>
-                    <img src="https://i.scdn.co/image/ab67616d0000b273da5d5aeeabacacc1263c0f4b" alt="Billie Eilish" class="music-img music-img1">
-                </div>
-                <audio src="https://ts5.tarafdari.com/contents/user678699/content-sound/04_dont_blame_me.mp3" class="dont-blame-me"></audio>
-            </div>
-            <div class="music music-num12">
-                <div class="music-btns">
-                    <i class="fa-solid fa-play play-btn play-btn12"></i>
-                    <i class="ri-pause-mini-line pause-btn pause-btn12"></i>
-                    <i class="fa-regular fa-heart heart-btn heart-btn12"></i>    
-                </div>
-                <div class="music-text-img">
-                    <div class="music-text">
-                        <p class="music-title music-title12">Blank space</p>
-                        <p class="music-singer music-singer12">Taylor Swift</p>    
-                    </div>
-                    <img src="https://i.scdn.co/image/ab67616d0000b27352b2a3824413eefe9e33817a" alt="Billie Eilish" class="music-img music-img1">
-                </div>
-                <audio src="https://ts2.tarafdari.com/contents/user6984/content-sound/96.taylor_swift_-_blank_space.mp3" class="blank-space"></audio>
-            </div>
-            <div class="music music-num13">
-                <div class="music-btns">
-                    <i class="fa-solid fa-play play-btn play-btn13"></i>
-                    <i class="ri-pause-mini-line pause-btn pause-btn13"></i>
-                    <i class="fa-regular fa-heart heart-btn heart-btn13"></i>    
-                </div>
-                <div class="music-text-img">
-                    <div class="music-text">
-                        <p class="music-title music-title13">Unholy</p>
-                        <p class="music-singer music-singer13">Sam Smith</p>    
-                    </div>
-                    <img src="https://i.scdn.co/image/ab67616d0000b273a935e4689f15953311772cc4" alt="Billie Eilish" class="music-img music-img13">
-                </div>
-                <audio src="https://dl.resamusic.ir/%DB%B0%DB%B1/%DB%B7/Sam%20Smith%20-%20Unholy.mp3" class="unholy"></audio>
-            </div>
-            <div class="music music-num14">
-                <div class="music-btns">
-                    <i class="fa-solid fa-play play-btn play-btn14"></i>
-                    <i class="ri-pause-mini-line pause-btn pause-btn14"></i>
-                    <i class="fa-regular fa-heart heart-btn heart-btn14"></i>    
-                </div>
-                <div class="music-text-img">
-                    <div class="music-text">
-                        <p class="music-title music-title14">Happier than ever</p>
-                        <p class="music-singer music-singer14">Billie Eilish</p>    
-                    </div>
-                    <img src="https://i.redd.it/a65pbqb19c571.jpg" alt="Billie Eilish" class="music-img music-img1">
-                </div>
+        <div class="posters">
+            <div class="poster1">
+                <img src="./media/posters/billie.png" alt="billie-poster" class="poster poster1">
             </div>
         </div>
-        <div class="menu-bar">
-            <div class="home-menu">
-                <i class="fa-solid fa-house"></i>
+        <div class="more">
+            <p class="more-text">Popular Singer</p>
+            <p class="more-btn">More</p>
+        </div>
+        <div class="singers">
+            <div class="singer singer1">
             </div>
-            <div class="music-menu">
-                <i class="fa-solid fa-music"></i>
+            <div class="singer singer2">
             </div>
-            <div class="user-menu">
-                <i class="fa-solid fa-user"></i>
+            <div class="singer singer3">
             </div>
-            <div class="settings-menu">
-                <i class="fa-solid fa-gear"></i>
+            <div class="singer singer4">
             </div>
+            <div class="singer singer5">
+            </div>
+            <div class="singer singer6">
+            </div>
+        </div>
+        <div class="more">
+            <p class="more-text">Trending</p>
+            <p class="more-btn">More</p>
+        </div>
+        <div class="trendings">
+            <div class="trending trending1">
+                <img src="./media/icons/play-circle.svg" alt="" class="play-circle play-btn-trending1">
+                <img src="./media/icons/pause-btn.svg" alt="" class="pause-btn pause-btn1">
+                <audio src="https://www.tarafdari.com/sites/default/files/contents/user300048/content-sound/18_-_bloody_mary_-_lady_gaga_320.mp3" class="bloody-music"></audio>
+            </div>
+            <div class="trending trending2">
+                <img src="./media/icons/play-circle.svg" alt="" class="play-circle play-btn-trending2">
+                <img src="./media/icons/pause-btn.svg" alt="" class="pause-btn pause-btn2">
+                <audio src="https://cdn.hiphopkit.com/uploads/music/2022/04/Southside-Ft-Travis-Scott-Future-Hold-That-Heat-(HipHopKit.com).mp3?dl=true" class="future-music"></audio>
+            </div>
+            <div class="trending trending3">
+                <img src="./media/icons/play-circle.svg" alt="" class="play-circle play-btn-trending3">
+                <img src="./media/icons/pause-btn.svg" alt="" class="pause-btn pause-btn3">
+                <audio src="https://talkglitz.media/wp-content/uploads/2018/08/Travis_Scott_-_Sicko_Mode_ft_Drake_talkglitz.tv.mp3" class="sicko-music"></audio>
+            </div>
+            <div class="trending trending4">
+                <img src="./media/icons/play-circle.svg" alt="" class="play-circle play-btn-trending4">
+                <img src="./media/icons/pause-btn.svg" alt="" class="pause-btn pause-btn4">
+                <audio src="https://sound-library.net/wp-content/uploads/2022/08/taylor-swift-dont-blame-me-sped-up-128-kbps.mp3" class="blame-music"></audio>
+            </div>
+            <div class="trending trending5">
+                <img src="./media/icons/play-circle.svg" alt="" class="play-circle play-btn-trending5">
+                <img src="./media/icons/pause-btn.svg" alt="" class="pause-btn pause-btn5">
+                <audio src="https://olagist.net/wp-content/uploads/2021/11/Travis_Scott_Ft_J_Cole_-_Mafia.mp3" class="mafia-music"></audio>
+            </div>
+            <div class="trending trending6">
+                <img src="./media/icons/play-circle.svg" alt="" class="play-circle play-btn-trending6">
+                <img src="./media/icons/pause-btn.svg" alt="" class="pause-btn pause-btn6">
+                <audio src="https://cdn.beatzjam.com/wp-content/uploads/2021/Billie-Eilish-Ft-Khalid-Lovely-(BeatzJam.com).mp3" class="lovely-music"></audio>
+            </div>
+        </div>
+        <div class="more">
+            <p class="more-text">New Musics</p>
+            <p class="more-btn">More</p>
+        </div>
+        <div class="new-musics">
+            <div class="new-music new-music-right new-music1">
+                <img src="./media/icons/play-circle.svg" alt="" class="play-circle play-btn-news1">
+                <img src="./media/icons/pause-btn.svg" alt="" class="pause-btn pause-news pause-btn7">
+            </div>
+            <div class="new-music new-music-left new-music2">
+                <img src="./media/icons/play-circle.svg" alt="" class="play-circle play-btn-news2">
+                <img src="./media/icons/pause-btn.svg" alt="" class="pause-btn pause-news pause-btn8">
+            </div>
+            <div class="new-music new-music-right new-music3">
+                <img src="./media/icons/play-circle.svg" alt="" class="play-circle play-btn-news3">
+                <img src="./media/icons/pause-btn.svg" alt="" class="pause-btn pause-news pause-btn9">
+            </div>
+            <div class="new-music new-music-left new-music4">
+                <img src="./media/icons/play-circle.svg" alt="" class="play-circle play-btn-news4">
+                <img src="./media/icons/pause-btn.svg" alt="" class="pause-btn pause-news pause-btn10">
+            </div>
+            <div class="new-music new-music-right new-music5">
+                <img src="./media/icons/play-circle.svg" alt="" class="play-circle play-btn-news5">
+                <img src="./media/icons/pause-btn.svg" alt="" class="pause-btn pause-news pause-btn11">
+            </div>
+            <div class="new-music new-music-left new-music6">
+                <img src="./media/icons/play-circle.svg" alt="" class="play-circle play-btn-news6">
+                <img src="./media/icons/pause-btn.svg" alt="" class="pause-btn pause-news pause-btn12">
+            </div>
+        </div>
+    <div class="menu-bar">
+        <div class="home-menu">
+            <img src="./media/icons/home-btn.svg" alt="">
+            <p class="text-btn text-btn1">Home</p>
+        </div>
+        <div class="category-menu">
+            <img src="./media/icons/category-btn.svg" alt="">
+            <p class="text-btn text-btn1">Category</p>
+        </div>
+        <div class="playlist-menu">
+            <img src="./media/icons/playlist-btn.svg" alt="home" class="playlist-btn">
+            <p class="text-btn text-btn1">Playlist</p>
+        </div>
+        <div class="profile-menu">
+            <div class="profile-btn">
+                <img src="https://pbs.twimg.com/media/FgYA_RAWQAEWCw3.jpg" alt="">
+            </div>
+            <p class="text-btn text-btn1">Profile</p>
         </div>
     </div>
 </body>
 <script src="./home.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </html>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="Group_9" data-name="Group 9" transform="translate(-1464 -82)">
+    <g id="grid" transform="translate(1466 84)">
+      <path id="Rectangle_93" data-name="Rectangle 93" d="M2-.5H6A2.5,2.5,0,0,1,8.5,2V6A2.5,2.5,0,0,1,6,8.5H2A2.5,2.5,0,0,1-.5,6V2A2.5,2.5,0,0,1,2-.5Zm4,8A1.5,1.5,0,0,0,7.5,6V2A1.5,1.5,0,0,0,6,.5H2A1.5,1.5,0,0,0,.5,2V6A1.5,1.5,0,0,0,2,7.5Z" transform="translate(0 0)" fill="#ebebeb"/>
+      <path id="Rectangle_94" data-name="Rectangle 94" d="M2-.5H6A2.5,2.5,0,0,1,8.5,2V6A2.5,2.5,0,0,1,6,8.5H2A2.5,2.5,0,0,1-.5,6V2A2.5,2.5,0,0,1,2-.5Zm4,8A1.5,1.5,0,0,0,7.5,6V2A1.5,1.5,0,0,0,6,.5H2A1.5,1.5,0,0,0,.5,2V6A1.5,1.5,0,0,0,2,7.5Z" transform="translate(12 0)" fill="#ebebeb"/>
+      <path id="Rectangle_95" data-name="Rectangle 95" d="M2-.5H6A2.5,2.5,0,0,1,8.5,2V6A2.5,2.5,0,0,1,6,8.5H2A2.5,2.5,0,0,1-.5,6V2A2.5,2.5,0,0,1,2-.5Zm4,8A1.5,1.5,0,0,0,7.5,6V2A1.5,1.5,0,0,0,6,.5H2A1.5,1.5,0,0,0,.5,2V6A1.5,1.5,0,0,0,2,7.5Z" transform="translate(12 12)" fill="#ebebeb"/>
+      <path id="Rectangle_96" data-name="Rectangle 96" d="M2-.5H6A2.5,2.5,0,0,1,8.5,2V6A2.5,2.5,0,0,1,6,8.5H2A2.5,2.5,0,0,1-.5,6V2A2.5,2.5,0,0,1,2-.5Zm4,8A1.5,1.5,0,0,0,7.5,6V2A1.5,1.5,0,0,0,6,.5H2A1.5,1.5,0,0,0,.5,2V6A1.5,1.5,0,0,0,2,7.5Z" transform="translate(0 12)" fill="#ebebeb"/>
+    </g>
+    <rect id="Rectangle_97" data-name="Rectangle 97" width="24" height="24" transform="translate(1464 82)" fill="none"/>
+  </g>
+</svg>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="Group_10" data-name="Group 10" transform="translate(-1464 -80)">
+    <g id="radio" transform="translate(1466 85)">
+      <circle id="Ellipse_13" data-name="Ellipse 13" cx="2" cy="2" r="2" transform="translate(7.998 5)" fill="none" stroke="#ebebeb" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <path id="Path_25" data-name="Path 25" d="M16.24,7.732a5.9,5.9,0,0,1,0,8.406m-8.48-.01a5.9,5.9,0,0,1,0-8.406M19.07,4.93a9.832,9.832,0,0,1,0,14m-14.14,0a9.832,9.832,0,0,1,0-14" transform="translate(-2.002 -4.93)" fill="none" stroke="#ebebeb" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+    </g>
+    <rect id="Rectangle_98" data-name="Rectangle 98" width="24" height="24" transform="translate(1464 80)" fill="none"/>
+  </g>
+</svg>
