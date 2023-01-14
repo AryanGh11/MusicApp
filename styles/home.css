@@ -2,14 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Gotham-Book;
     outline: none;
-    font-family: 'Gotham Thin', sans-serif;
     font-size: 100%;
 }
 @media screen and (max-width: 460px) {
     body {
         scroll-behavior: smooth;
-        background-color: #221f1f;
+        background-color: #101010;
         padding: 0 1rem 6rem;
     }
     .nav-bar {
@@ -26,9 +26,9 @@
         width: 100%;
         height: 2.5rem;
         border-radius: 12px;
-        background-color: #404040;
+        background-color: #252525;
         border: none;
-        opacity: 56%;
+        opacity: 100%;
     }
     .search-input::placeholder {
         font-size: 12px;
@@ -50,7 +50,7 @@
         color: #E50914;
     }
     .poster {
-        width: 20.5rem;
+        width: 100%;
         border-radius: 12px;
     }
     .search-input:placeholder-shown {
@@ -153,16 +153,11 @@
         right: -25%;
         display: none;
     }
-    .pause-news {
-        position: relative;
-        bottom: -70%;
-        right: -34%;
-    }
     .menu-bar {
         display: flex;
         flex-direction: row;
         color: #EBEBEB;
-        background-color: #221f1f;
+        background-color: #101010;
         justify-content: space-between;
         width: 100%;
         height: 6rem;
@@ -171,6 +166,7 @@
         left: 0;
         bottom: 0;
         padding: 1rem 2.5rem 2rem 2.5rem;
+        border-radius: 48px 48px 0 0;
     }
     .home-menu, .category-menu, .playlist-menu, .profile-menu {
         display: flex;
@@ -201,34 +197,43 @@
         opacity: 0;
     }
     .new-musics {
-        display: grid;
-        grid-template-columns: repeat(2, 0fr);
         width: 100%;
+        display: flex;
+        flex-direction: column;
     }
     .new-music {
         background-color: #E50914;
-        width: 9.375rem;
+        width: 48%;
         height: 9.375rem;
         margin-bottom: .75rem;
         border-radius: 12px;
     }
-    .new-music-left {
-        margin-left: .75rem;
+    .new-music-c1 {
+        display: flex;
+        justify-content: space-between;
+    }
+    .new-music-c2 {
+        display: flex;
+        justify-content: space-between;
+    }
+    .new-music-c3 {
+        display: flex;
+        justify-content: space-between;
     }
     .new-music1 {
-        background-image: url(https://i.scdn.co/image/ab67616d0000b2739c05fec02bd9b81ee1246b2f);
+        background-image: url(https://i1.sndcdn.com/artworks-000220797195-y4hfbb-t500x500.jpg);
         background-size: cover;
     }
     .new-music2 {
-        background-image: url(https://i.scdn.co/image/ab67616d0000b273954fe13f7c5f4b2f18d066b8);
+        background-image: url(https://i.scdn.co/image/ab67616d0000b273009516bc4f16759f46ded073);
         background-size: cover;
     }
     .new-music3 {
-        background-image: url(https://i.scdn.co/image/ab67616d0000b273b5e9358d0d07114609d9afab);
+        background-image: url(https://i.scdn.co/image/ab67616d0000b273e7450b4f98230eb4186c5662);
         background-size: cover;
     }
     .new-music4 {
-        background-image: url(https://i.scdn.co/image/ab67616d0000b273072e9faef2ef7b6db63834a3);
+        background-image: url(https://i.scdn.co/image/ab67616d0000b2731802a56bb1927590b91677bd);
         background-size: cover;
     }
     .new-music5 {
@@ -236,7 +241,7 @@
         background-size: cover;
     }
     .new-music6 {
-        background-image: url(https://i.scdn.co/image/ab67616d0000b27350a3147b4edd7701a876c6ce);
+        background-image: url(https://i.scdn.co/image/ab67616d0000b2737a4781629469bb83356cd318);
         background-size: cover;
     }
 }

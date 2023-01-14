@@ -3,12 +3,12 @@
     padding: 0;
     box-sizing: border-box;
     outline: none;
-    font-family: 'Gotham Thin', sans-serif;
+    font-family: Gotham-Book;
     font-size: 100%;
 }
 @media screen and (max-width: 460px) {
     body {
-        background-color: #221F1F;
+        background-color: #101010;
         padding: 0 1rem 0;
     }
     .login-page {
@@ -30,7 +30,7 @@
     }
     .logo-text p {
         margin-top: .5rem;
-        font-family: 'Gotham Black', sans-serif;
+        font-family: Gotham-Bold;
     }
     .inputs {
         display: flex;
@@ -40,8 +40,8 @@
     .inputs input {
         height: 3.5rem;
         border-radius: 12px;
-        background-color: #221F1F;
-        border: 1px solid #404040;
+        background-color: #101010;
+        border: 1px solid #252525;
     }
     .password {
         margin-top: .75rem;
@@ -79,13 +79,13 @@
     }
     .login {
         background-color: #E50914;
-        color: #221F1F;
-        font-family: 'Gotham Black', sans-serif;
+        color: #101010;
+        font-family: Gotham-Bold;
     }
     .create-account {
-        background-color: #221F1F;
+        background-color: #101010;
         color: #E50914;
-        font-family: 'Gotham Black', sans-serif;
+        font-family: Gotham-Bold;
     }
     .delete-btn1 {
         position: absolute;
