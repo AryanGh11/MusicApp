@@ -26,6 +26,15 @@ const musicNews4 = document.querySelector(".lose-music");
 const musicNews5 = document.querySelector(".middle-music");
 const musicNews6 = document.querySelector(".tv-music");
 
+const singer1 = document.querySelector(".singer1");
+const singer2 = document.querySelector(".singer2");
+const singer3 = document.querySelector(".singer3");
+const singer4 = document.querySelector(".singer4");
+const singer5 = document.querySelector(".singer5");
+const singer6 = document.querySelector(".singer6");
+
+const closeBtn = document.querySelector(".close-btn");
+
 playBtnTrending1.addEventListener("click", () => {
     document.querySelectorAll("audio").forEach(el => el.pause());
     musicTrending1.play();
@@ -194,3 +203,71 @@ playBtnNews6.addEventListener("click", () => {
         playBtn.style.display = "block";
     })
 });
+singer1.addEventListener("click", () => {
+    const singerBillie = document.createElement("div");
+    const contentDiv = document.querySelector(".content");
+    contentDiv.appendChild(singerBillie);
+    singerBillie.classList.add("singer-billie");
+    singerBillie.style.display = "block";
+
+    const singerHeader = document.createElement("div");
+    singerBillie.appendChild(singerHeader);
+    singerHeader.classList.add("singer-header");
+
+    const textVerified = document.createElement("div");
+    singerHeader.appendChild(textVerified);
+    textVerified.classList.add("text-verified");
+
+    const singerName = document.createElement("div");
+    textVerified.appendChild(singerName);
+    singerName.classList.add("singer-name");
+
+    const singerNameP = document.createElement("p");
+    const singerNamePContent = document.createTextNode("Billie Eilish");
+    singerNameP.appendChild(singerNamePContent);
+    singerName.appendChild(singerNameP);
+
+    const singerNameImg = document.createElement("img");
+    singerNameImg.setAttribute("src", "./media/icons/verified.svg");
+    singerName.appendChild(singerNameImg);
+
+    const listeners = document.createElement("p");
+    const listenersContent = document.createTextNode("50,176,491 monthly listeners");
+    listeners.appendChild(listenersContent);
+    textVerified.appendChild(listeners);
+    listeners.classList.add("listeners")
+
+    const singerImg = document.createElement("img");
+    singerImg.setAttribute("src", "./media/icons/play-all-btn.svg");
+    singerHeader.appendChild(singerImg);
+
+    const singerBackImg = document.createElement("div");
+    singerBillie.appendChild(singerBackImg);
+    singerBackImg.classList.add("singer-back-img");
+
+    const singerBackImgShadow = document.createElement("div");
+    singerBillie.appendChild(singerBackImgShadow);
+    singerBackImgShadow.classList.add("background-shadow");
+
+    const downloadShuffleBtn = document.createElement("div");
+    singerBillie.appendChild(downloadShuffleBtn);
+    downloadShuffleBtn.classList.add("download-shuffle-btn");
+    
+    const shuffleBtnImg = document.createElement("img");
+    shuffleBtnImg.setAttribute("src", "./media/icons/play-all-btn2.svg");
+    downloadShuffleBtn.appendChild(shuffleBtnImg);
+    shuffleBtnImg.classList.add("shuffle-btn");
+
+    const downloadBtnImg = document.createElement("img");
+    downloadBtnImg.setAttribute("src", "./media/icons/download-btn.svg");
+    downloadShuffleBtn.appendChild(downloadBtnImg);
+    downloadBtnImg.classList.add("download-btn");
+
+    const closeBtn = document.createElement("img");
+    closeBtn.setAttribute("src", "./media/icons/close-btn.svg");
+    singerBillie.appendChild(closeBtn);
+    closeBtn.classList.add("close-btn");
+    closeBtn.addEventListener("click", () => {
+        singerBillie.style.display = "none";
+    })
+})

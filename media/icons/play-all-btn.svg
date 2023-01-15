@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="52.001" height="52" viewBox="0 0 52.001 52">
+  <defs>
+    <filter id="Exclusion_1" x="0" y="0" width="52.001" height="52" filterUnits="userSpaceOnUse">
+      <feOffset dy="4" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="play-circle_1_" data-name="play-circle (1)" transform="translate(9 5.001)">
+    <g transform="matrix(1, 0, 0, 1, -9, -5)" filter="url(#Exclusion_1)">
+      <path id="Exclusion_1-2" data-name="Exclusion 1" d="M17,34A17,17,0,0,1,4.979,4.978,17,17,0,1,1,29.022,29.02,16.89,16.89,0,0,1,17,34ZM15,10.96a2.006,2.006,0,0,0-2,2v8.075a2.005,2.005,0,0,0,2,2,1.971,1.971,0,0,0,1-.271l7-4.036a2,2,0,0,0,0-3.465L16,11.23A1.971,1.971,0,0,0,15,10.96Z" transform="translate(9 5)" fill="#e50914"/>
+    </g>
+  </g>
+</svg>
