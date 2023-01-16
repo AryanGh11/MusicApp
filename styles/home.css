@@ -202,54 +202,6 @@
     .category-menu p, .playlist-menu p, .profile-menu p {
         opacity: 0;
     }
-    .new-musics {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-    }
-    .new-music {
-        background-color: #E50914;
-        width: 48%;
-        height: 9.375rem;
-        margin-bottom: .75rem;
-        border-radius: 12px;
-    }
-    .new-music-c1 {
-        display: flex;
-        justify-content: space-between;
-    }
-    .new-music-c2 {
-        display: flex;
-        justify-content: space-between;
-    }
-    .new-music-c3 {
-        display: flex;
-        justify-content: space-between;
-    }
-    .new-music1 {
-        background-image: url(https://i1.sndcdn.com/artworks-000220797195-y4hfbb-t500x500.jpg);
-        background-size: cover;
-    }
-    .new-music2 {
-        background-image: url(https://i.scdn.co/image/ab67616d0000b273009516bc4f16759f46ded073);
-        background-size: cover;
-    }
-    .new-music3 {
-        background-image: url(https://i.scdn.co/image/ab67616d0000b273e7450b4f98230eb4186c5662);
-        background-size: cover;
-    }
-    .new-music4 {
-        background-image: url(https://i.scdn.co/image/ab67616d0000b2731802a56bb1927590b91677bd);
-        background-size: cover;
-    }
-    .new-music5 {
-        background-image: url(https://i.scdn.co/image/ab67616d0000b27353a2e11c1bde700722fecd2e);
-        background-size: cover;
-    }
-    .new-music6 {
-        background-image: url(https://i.scdn.co/image/ab67616d0000b2737a4781629469bb83356cd318);
-        background-size: cover;
-    }
     .singer-billie {
         position: fixed;
         top: 0;
@@ -357,7 +309,8 @@
         background-color: #E50914;
         border-radius: 24px 24px 0 0;
         align-items: flex-start;
-        animation: music-bar .2s alternate;
+        animation: music-bar .2s;
+        z-index: +1;
     }
     .music-name-singer p {
         display: flex;
@@ -387,8 +340,9 @@
     .music-bar-btns {
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-between;
         margin: 1rem 1rem 0 0;
+        width: 30%;
     }
     .music-bar-forward {
         rotate: 180deg;
