@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="113" height="32" viewBox="0 0 113 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #252525;
+      }
+
+      .cls-2, .cls-3 {
+        fill: #e50914;
+      }
+
+      .cls-3 {
+        font-size: 12px;
+        font-family: Gotham-Bold, Gotham;
+        font-weight: 700;
+      }
+    </style>
+  </defs>
+  <g id="Group_15" data-name="Group 15" transform="translate(-256 -166)">
+    <rect id="Rectangle_212" data-name="Rectangle 212" class="cls-1" width="113" height="32" rx="12" transform="translate(256 166)"/>
+    <path id="Subtraction_3" data-name="Subtraction 3" class="cls-2" d="M-192-2520h-10a6.007,6.007,0,0,1-6-6v-10a6.007,6.007,0,0,1,6-6h10a6.006,6.006,0,0,1,6,6v10A6.007,6.007,0,0,1-192-2520Zm-7-16.521a2.006,2.006,0,0,0-2,2v7.036a2,2,0,0,0,2,2,2,2,0,0,0,1.005-.275l6.03-3.518a1.98,1.98,0,0,0,.992-1.727,1.982,1.982,0,0,0-.992-1.729l-6.03-3.518A1.971,1.971,0,0,0-199-2536.521Z" transform="translate(469 2713)"/>
+    <text id="Shuffle_play" data-name="Shuffle play" class="cls-3" transform="translate(289 187)"><tspan x="0" y="0">Shuffle play</tspan></text>
+  </g>
+</svg>

@@ -254,7 +254,7 @@ singer1.addEventListener("click", () => {
     downloadShuffleBtn.classList.add("download-shuffle-btn");
     
     const shuffleBtnImg = document.createElement("img");
-    shuffleBtnImg.setAttribute("src", "./media/icons/play-all-btn2.svg");
+    shuffleBtnImg.setAttribute("src", "./media/icons/shuffle-play.svg");
     downloadShuffleBtn.appendChild(shuffleBtnImg);
     shuffleBtnImg.classList.add("shuffle-btn");
 
@@ -270,6 +270,8 @@ singer1.addEventListener("click", () => {
     closeBtn.addEventListener("click", () => {
         singerBillie.style.display = "none";
     })
+
+    //music 1
 
     const singerMusic1 = document.createElement("div");
     singerBillie.appendChild(singerMusic1);
@@ -298,7 +300,7 @@ singer1.addEventListener("click", () => {
     singerMusicName1.appendChild(singerMusicNameContent1);
     singerMusicNameImg1.appendChild(singerMusicName1);
 
-    // music 2
+    //music 2
 
     const singerMusic2 = document.createElement("div");
     singerBillie.appendChild(singerMusic2);
@@ -326,4 +328,47 @@ singer1.addEventListener("click", () => {
     const singerMusicNameContent2 = document.createTextNode("TV");
     singerMusicName2.appendChild(singerMusicNameContent2);
     singerMusicNameImg2.appendChild(singerMusicName2);
+
+    //music 3
+
+    const singerMusic3 = document.createElement("div");
+    singerBillie.appendChild(singerMusic3);
+    singerMusic3.classList.add("singer-music");
+    singerMusic3.classList.add("singer-music3");
+
+    const singerMusicNameImg3 = document.createElement("div");
+    singerMusic3.appendChild(singerMusicNameImg3);
+    singerMusicNameImg3.classList.add("singer-music-name-img");
+    singerMusicNameImg3.classList.add("singer-music-name-img3");
+
+    const singerMusicPlay3 = document.createElement("img");
+    singerMusicPlay3.setAttribute("src", "./media/icons/singer-music-play.svg");
+    singerMusic3.appendChild(singerMusicPlay3);
+    singerMusicPlay3.classList.add("singer-music-play");
+    singerMusicPlay3.classList.add("singer-music-play3");
+
+    const singerMusicImg3 = document.createElement("img");
+    singerMusicImg3.setAttribute("src", "https://i.scdn.co/image/ab67616d0000b2732a038d3bf875d23e4aeaa84e");
+    singerMusicNameImg3.appendChild(singerMusicImg3);
+    singerMusicImg3.classList.add("singer-music-img");
+    singerMusicImg3.classList.add("singer-music-img3");
+
+    const singerMusicName3 = document.createElement("p");
+    const singerMusicNameContent3 = document.createTextNode("Happier Than Ever");
+    singerMusicName3.appendChild(singerMusicNameContent3);
+    singerMusicNameImg3.appendChild(singerMusicName3);
+
+    singerMusicPlay1.addEventListener("click", () => {
+        document.querySelectorAll("audio").forEach(el => el.pause());
+        const music = document.querySelector(".singer-billie-lovely");
+        music.play();
+        const pauseBtn = document.createElement("img");
+        pauseBtn.setAttribute("src", "./media/icons/singer-music-pause.svg");
+        singerMusic1.appendChild(pauseBtn);
+        pauseBtn.classList.add("singer-music-pause")
+        pauseBtn.addEventListener("click", () => {
+            music.pause();
+            pauseBtn.style.display = "none";
+        })
+    })
 })
