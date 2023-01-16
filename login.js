@@ -2,6 +2,7 @@ const username = document.querySelector(".username");
 const password = document.querySelector(".password");
 const login = document.querySelector(".login");
 const createAccount = document.querySelector(".create-account");
+const appLogo = document.querySelector(".logo-text");
 
 login.addEventListener("click", () => {
     const usernameValue = username.value;
@@ -33,4 +34,7 @@ login.addEventListener("click", () => {
             className: "swal-btn"
         });
     }
+})
+appLogo.addEventListener("click", () => {
+    window.location = "./home.html";
 })

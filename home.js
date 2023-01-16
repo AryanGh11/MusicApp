@@ -252,16 +252,6 @@ singer1.addEventListener("click", () => {
     const downloadShuffleBtn = document.createElement("div");
     singerBillie.appendChild(downloadShuffleBtn);
     downloadShuffleBtn.classList.add("download-shuffle-btn");
-    
-    const shuffleBtnImg = document.createElement("img");
-    shuffleBtnImg.setAttribute("src", "./media/icons/shuffle-play.svg");
-    downloadShuffleBtn.appendChild(shuffleBtnImg);
-    shuffleBtnImg.classList.add("shuffle-btn");
-
-    const downloadBtnImg = document.createElement("img");
-    downloadBtnImg.setAttribute("src", "./media/icons/download-btn.svg");
-    downloadShuffleBtn.appendChild(downloadBtnImg);
-    downloadBtnImg.classList.add("download-btn");
 
     const closeBtn = document.createElement("img");
     closeBtn.setAttribute("src", "./media/icons/close-btn.svg");
@@ -299,6 +289,84 @@ singer1.addEventListener("click", () => {
     const singerMusicNameContent1 = document.createTextNode("Lovely");
     singerMusicName1.appendChild(singerMusicNameContent1);
     singerMusicNameImg1.appendChild(singerMusicName1);
+
+    singerMusicPlay1.addEventListener("click", () => {
+        document.querySelectorAll("audio").forEach(el => el.pause());
+        const music = document.querySelector(".singer-billie-lovely");
+        music.play();
+        
+        // const pauseBtn = document.createElement("img");
+        // pauseBtn.setAttribute("src", "./media/icons/singer-music-pause.svg");
+        // singerMusic1.appendChild(pauseBtn);
+        // pauseBtn.classList.add("singer-music-pause")
+        // pauseBtn.addEventListener("click", () => {
+        //     music.pause();
+        //     pauseBtn.style.display = "none";
+        // })
+
+        const musicBar = document.createElement("div");
+        const content = document.querySelector(".content");
+        content.appendChild(musicBar);
+        musicBar.classList.add("music-bar");
+
+        const musicNameSingerImg = document.createElement("div");
+        musicBar.appendChild(musicNameSingerImg);
+        musicNameSingerImg.classList.add("music-name-singer-img");
+        
+        const musicNameSinger = document.createElement("div");
+        musicNameSingerImg.appendChild(musicNameSinger);
+        musicNameSinger.classList.add("music-name-singer");
+
+        const musicName = document.createElement("p");
+        const musicNameContent = document.createTextNode("Lovely");
+        musicName.appendChild(musicNameContent);
+        musicNameSinger.appendChild(musicName);
+        musicName.classList.add("music-name");
+
+        const musicSinger = document.createElement("p");
+        const musicSingerContent = document.createTextNode("Billie Eilish");
+        musicSinger.appendChild(musicSingerContent);
+        musicNameSinger.appendChild(musicSinger);
+        musicSinger.classList.add("music-singer");
+        
+        const musicSingerImg = document.createElement("img");
+        musicSingerImg.setAttribute("src", "https://upload.wikimedia.org/wikipedia/en/f/fa/Billie_Eilish_and_Khalid_-_Lovely.png");
+        musicNameSingerImg.appendChild(musicSingerImg);
+        musicSingerImg.classList.add("music-bar-img");
+
+        const musicBarBtns = document.createElement("div");
+        musicBar.appendChild(musicBarBtns);
+        musicBarBtns.classList.add("music-bar-btns");
+
+        const musicBarForwardBtn = document.createElement("img");
+        musicBarForwardBtn.setAttribute("src", "./media/icons/forward-back-btn-music-bar.svg");
+        musicBarBtns.appendChild(musicBarForwardBtn);
+        musicBarForwardBtn.classList.add("music-bar-forward");
+
+        const musicBarPauseBtn = document.createElement("img");
+        musicBarPauseBtn.setAttribute("src", "./media/icons/pause-btn-music-bar.svg");
+        musicBarBtns.appendChild(musicBarPauseBtn);
+        musicBarPauseBtn.classList.add("music-bar-pause");
+        
+        musicBarPauseBtn.addEventListener("click", () => {
+            music.pause();
+            const musicBarPlay = document.createElement("img");
+            musicBarPlay.setAttribute("src", "./media/icons/play-btn-music-bar.svg");
+            musicBarBtns.appendChild(musicBarPlay);
+            musicBarBackBtn.classList.add("music-bar-play");
+            musicBarPauseBtn.style.display = "none";
+            musicBarPlay.addEventListener("click", () => {
+                music.play();
+                musicBarPlay.style.display = "none";
+                musicBarPauseBtn.style.display = "block";
+            })
+        })
+
+        const musicBarBackBtn = document.createElement("img");
+        musicBarBackBtn.setAttribute("src", "./media/icons/forward-back-btn-music-bar.svg");
+        musicBarBtns.appendChild(musicBarBackBtn);
+        musicBarBackBtn.classList.add("music-bar-back");
+    })
 
     //music 2
 
@@ -358,18 +426,6 @@ singer1.addEventListener("click", () => {
     singerMusicName3.appendChild(singerMusicNameContent3);
     singerMusicNameImg3.appendChild(singerMusicName3);
 
-    singerMusicPlay1.addEventListener("click", () => {
-        document.querySelectorAll("audio").forEach(el => el.pause());
-        const music = document.querySelector(".singer-billie-lovely");
-        music.play();
-        const pauseBtn = document.createElement("img");
-        pauseBtn.setAttribute("src", "./media/icons/singer-music-pause.svg");
-        singerMusic1.appendChild(pauseBtn);
-        pauseBtn.classList.add("singer-music-pause")
-        pauseBtn.addEventListener("click", () => {
-            music.pause();
-            pauseBtn.style.display = "none";
-        })
-    })
+    
     
 })
