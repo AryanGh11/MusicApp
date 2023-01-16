@@ -270,4 +270,60 @@ singer1.addEventListener("click", () => {
     closeBtn.addEventListener("click", () => {
         singerBillie.style.display = "none";
     })
+
+    const singerMusic1 = document.createElement("div");
+    singerBillie.appendChild(singerMusic1);
+    singerMusic1.classList.add("singer-music");
+    singerMusic1.classList.add("singer-music1");
+
+    const singerMusicNameImg1 = document.createElement("div");
+    singerMusic1.appendChild(singerMusicNameImg1);
+    singerMusicNameImg1.classList.add("singer-music-name-img");
+    singerMusicNameImg1.classList.add("singer-music-name-img1");
+
+    const singerMusicPlay1 = document.createElement("img");
+    singerMusicPlay1.setAttribute("src", "./media/icons/singer-music-play.svg");
+    singerMusic1.appendChild(singerMusicPlay1);
+    singerMusicPlay1.classList.add("singer-music-play");
+    singerMusicPlay1.classList.add("singer-music-play1");
+
+    const singerMusicImg1 = document.createElement("img");
+    singerMusicImg1.setAttribute("src", "https://upload.wikimedia.org/wikipedia/en/f/fa/Billie_Eilish_and_Khalid_-_Lovely.png");
+    singerMusicNameImg1.appendChild(singerMusicImg1);
+    singerMusicImg1.classList.add("singer-music-img");
+    singerMusicImg1.classList.add("singer-music-img1");
+
+    const singerMusicName1 = document.createElement("p");
+    const singerMusicNameContent1 = document.createTextNode("Lovely");
+    singerMusicName1.appendChild(singerMusicNameContent1);
+    singerMusicNameImg1.appendChild(singerMusicName1);
+
+    // music 2
+
+    const singerMusic2 = document.createElement("div");
+    singerBillie.appendChild(singerMusic2);
+    singerMusic2.classList.add("singer-music");
+    singerMusic2.classList.add("singer-music2");
+
+    const singerMusicNameImg2 = document.createElement("div");
+    singerMusic2.appendChild(singerMusicNameImg2);
+    singerMusicNameImg2.classList.add("singer-music-name-img");
+    singerMusicNameImg2.classList.add("singer-music-name-img2");
+
+    const singerMusicPlay2 = document.createElement("img");
+    singerMusicPlay2.setAttribute("src", "./media/icons/singer-music-play.svg");
+    singerMusic2.appendChild(singerMusicPlay2);
+    singerMusicPlay2.classList.add("singer-music-play");
+    singerMusicPlay2.classList.add("singer-music-play2");
+
+    const singerMusicImg2 = document.createElement("img");
+    singerMusicImg2.setAttribute("src", "https://i.scdn.co/image/ab67616d0000b2737a4781629469bb83356cd318");
+    singerMusicNameImg2.appendChild(singerMusicImg2);
+    singerMusicImg2.classList.add("singer-music-img");
+    singerMusicImg2.classList.add("singer-music-img2");
+
+    const singerMusicName2 = document.createElement("p");
+    const singerMusicNameContent2 = document.createTextNode("TV");
+    singerMusicName2.appendChild(singerMusicNameContent2);
+    singerMusicNameImg2.appendChild(singerMusicName2);
 })

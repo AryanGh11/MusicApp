@@ -286,23 +286,23 @@
         display: flex;
         width: 100%;
         justify-content: space-between;
-        margin-top: 5rem;
+        margin-top: 10.625rem;
         align-items: center;
     }
     .singer-back-img {
         width: 100%;
-        height: 9.5rem;
+        height: 15rem;
         background-image: url(https://i.scdn.co/image/ab67616d0000b2732a038d3bf875d23e4aeaa84e);
         position: absolute;
         top: 0;
         right: 0;
         z-index: -1;
         background-size: cover;
-        background-position: 25% 35%;
+        background-position: 25% 65%;
     }
     .background-shadow {
         width: 100%;
-        height: 9.5rem;
+        height: 15rem;
         position: absolute;
         top: 0;
         right: 0;
@@ -323,6 +323,29 @@
         position: fixed;
         top: 1rem;
         left: 1rem;
+    }
+    .singer-music {
+        display: flex;
+        height: 3.5rem;
+        flex-direction: row;
+        align-items: center;
+        border-bottom: .5px solid rgba(256, 256, 256, .25);
+    }
+    .singer-music1 {
+        margin-top: .5rem;
+    }
+    .singer-music-name-img {
+        display: flex;
+        width: 100%;
+        align-items: center;
+    }
+    .singer-music-name-img p {
+        margin-left: .5rem;
+    }
+    .singer-music-img {
+        width: 2rem;
+        height: 2rem;
+        border-radius: 6px;
     }
     @keyframes singer-page {
         0% {
