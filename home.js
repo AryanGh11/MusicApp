@@ -371,4 +371,5 @@ singer1.addEventListener("click", () => {
             pauseBtn.style.display = "none";
         })
     })
+    
 })

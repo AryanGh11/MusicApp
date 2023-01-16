@@ -21,6 +21,9 @@ login.addEventListener("click", () => {
     if(usernameValue === "user" && passwordValue === "123456") {
         window.location = "./home.html"
     }
+    if(usernameValue === "User" && passwordValue === "123456") {
+        window.location = "./home.html"
+    }
     else {
         swal({
             title: "You don't have an account",
