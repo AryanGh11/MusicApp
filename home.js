@@ -95,6 +95,17 @@ playBtnTrending1.addEventListener("click", () => {
     musicBarBackBtn.setAttribute("src", "./media/icons/forward-back-btn-music-bar.svg");
     musicBarBtns.appendChild(musicBarBackBtn);
     musicBarBackBtn.classList.add("music-bar-back");
+    
+    musicTrending1.addEventListener("ended", () => {
+        musicTrending1.currentTime = 0;
+        musicTrending1.play();
+    });
+
+    musicBar.addEventListener("click", () => {
+        const musicPage = document.createElement("div");
+        content.appendChild(musicPage);
+        musicPage.classList.add("music-page");
+    })
 })
 
 playBtnTrending2.addEventListener("click", () => {
@@ -114,7 +125,7 @@ playBtnTrending2.addEventListener("click", () => {
     musicNameSinger.classList.add("music-name-singer");
 
     const musicName = document.createElement("p");
-    const musicNameContent = document.createTextNode("Waiting for nakhl...");
+    const musicNameContent = document.createTextNode("Hold That Heat");
     musicName.appendChild(musicNameContent);
     musicNameSinger.appendChild(musicName);
     musicName.classList.add("music-name");
@@ -162,6 +173,11 @@ playBtnTrending2.addEventListener("click", () => {
     musicBarBackBtn.setAttribute("src", "./media/icons/forward-back-btn-music-bar.svg");
     musicBarBtns.appendChild(musicBarBackBtn);
     musicBarBackBtn.classList.add("music-bar-back");
+
+    musicTrending2.addEventListener("ended", () => {
+        musicTrending2.currentTime = 0;
+        musicTrending2.play();
+    });
 })
 playBtnTrending3.addEventListener("click", () => {
     document.querySelectorAll("audio").forEach(el => el.pause());
@@ -228,6 +244,11 @@ playBtnTrending3.addEventListener("click", () => {
     musicBarBackBtn.setAttribute("src", "./media/icons/forward-back-btn-music-bar.svg");
     musicBarBtns.appendChild(musicBarBackBtn);
     musicBarBackBtn.classList.add("music-bar-back");
+
+    musicTrending3.addEventListener("ended", () => {
+        musicTrending3.currentTime = 0;
+        musicTrending3.play();
+    });
 })
 playBtnTrending4.addEventListener("click", () => {
     document.querySelectorAll("audio").forEach(el => el.pause());
@@ -294,6 +315,11 @@ playBtnTrending4.addEventListener("click", () => {
     musicBarBackBtn.setAttribute("src", "./media/icons/forward-back-btn-music-bar.svg");
     musicBarBtns.appendChild(musicBarBackBtn);
     musicBarBackBtn.classList.add("music-bar-back");
+
+    musicTrending4.addEventListener("ended", () => {
+        musicTrending4.currentTime = 0;
+        musicTrending4.play();
+    });
 })
 playBtnTrending5.addEventListener("click", () => {
     document.querySelectorAll("audio").forEach(el => el.pause());
@@ -312,7 +338,7 @@ playBtnTrending5.addEventListener("click", () => {
     musicNameSinger.classList.add("music-name-singer");
 
     const musicName = document.createElement("p");
-    const musicNameContent = document.createTextNode("Waiting for nakhl...");
+    const musicNameContent = document.createTextNode("In Mafia");
     musicName.appendChild(musicNameContent);
     musicNameSinger.appendChild(musicName);
     musicName.classList.add("music-name");
@@ -360,6 +386,11 @@ playBtnTrending5.addEventListener("click", () => {
     musicBarBackBtn.setAttribute("src", "./media/icons/forward-back-btn-music-bar.svg");
     musicBarBtns.appendChild(musicBarBackBtn);
     musicBarBackBtn.classList.add("music-bar-back");
+
+    musicTrending5.addEventListener("ended", () => {
+        musicTrending5.currentTime = 0;
+        musicTrending5.play();
+    });
 })
 playBtnTrending6.addEventListener("click", () => {
     document.querySelectorAll("audio").forEach(el => el.pause());
@@ -426,6 +457,11 @@ playBtnTrending6.addEventListener("click", () => {
     musicBarBackBtn.setAttribute("src", "./media/icons/forward-back-btn-music-bar.svg");
     musicBarBtns.appendChild(musicBarBackBtn);
     musicBarBackBtn.classList.add("music-bar-back");
+    
+    musicTrending6.addEventListener("ended", () => {
+        musicTrending6.currentTime = 0;
+        musicTrending6.play();
+    });
 })
 singer1.addEventListener("click", () => {
     const singerBillie = document.createElement("div");
@@ -580,6 +616,11 @@ singer1.addEventListener("click", () => {
         musicBarBackBtn.setAttribute("src", "./media/icons/forward-back-btn-music-bar.svg");
         musicBarBtns.appendChild(musicBarBackBtn);
         musicBarBackBtn.classList.add("music-bar-back");
+
+        music.addEventListener("ended", () => {
+            music.currentTime = 0;
+            music.play();
+        });
     })
 
     //music 2
@@ -677,6 +718,11 @@ singer1.addEventListener("click", () => {
         musicBarBackBtn.setAttribute("src", "./media/icons/forward-back-btn-music-bar.svg");
         musicBarBtns.appendChild(musicBarBackBtn);
         musicBarBackBtn.classList.add("music-bar-back");
+
+        music.addEventListener("ended", () => {
+            music.currentTime = 0;
+            music.play();
+        });
     })
 
     //music 3
@@ -775,7 +821,10 @@ singer1.addEventListener("click", () => {
         musicBarBtns.appendChild(musicBarBackBtn);
         musicBarBackBtn.classList.add("music-bar-back");
     })
-
+    music.addEventListener("ended", () => {
+        music.currentTime = 0;
+        music.play();
+    });
 })
 poster1.addEventListener("click", () => {
     const singerBillie = document.createElement("div");
@@ -930,6 +979,11 @@ poster1.addEventListener("click", () => {
         musicBarBackBtn.setAttribute("src", "./media/icons/forward-back-btn-music-bar.svg");
         musicBarBtns.appendChild(musicBarBackBtn);
         musicBarBackBtn.classList.add("music-bar-back");
+        
+        music.addEventListener("ended", () => {
+            music.currentTime = 0;
+            music.play();
+        });
     })
 
     //music 2
@@ -1027,6 +1081,11 @@ poster1.addEventListener("click", () => {
         musicBarBackBtn.setAttribute("src", "./media/icons/forward-back-btn-music-bar.svg");
         musicBarBtns.appendChild(musicBarBackBtn);
         musicBarBackBtn.classList.add("music-bar-back");
+
+        music.addEventListener("ended", () => {
+            music.currentTime = 0;
+            music.play();
+        });
     })
 
     //music 3
@@ -1124,6 +1183,11 @@ poster1.addEventListener("click", () => {
         musicBarBackBtn.setAttribute("src", "./media/icons/forward-back-btn-music-bar.svg");
         musicBarBtns.appendChild(musicBarBackBtn);
         musicBarBackBtn.classList.add("music-bar-back");
+
+        music.addEventListener("ended", () => {
+            music.currentTime = 0;
+            music.play();
+        });
     })
 
 })

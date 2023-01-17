@@ -274,7 +274,7 @@
         border-bottom: .5px solid rgba(256, 256, 256, .25);
     }
     .singer-music1 {
-        margin-top: 1rem;
+        margin-top: 2rem;
     }
     .singer-music-name-img {
         display: flex;
@@ -350,6 +350,16 @@
     .music-bar-play {
         order: 2;
     }
+    .music-page {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-color: blue;
+        bottom: 0;
+        right: 0;
+        animation: music-page .5s alternate;
+        z-index: +2;
+    }
     @keyframes singer-page {
         0% {
             right: -100%;
@@ -361,6 +371,14 @@
     @keyframes music-bar {
         0% {
             bottom: -50%;
+        }
+        100% {
+            bottom: 0;
+        }
+    }
+    @keyframes music-page {
+        0% {
+            bottom: -100%;
         }
         100% {
             bottom: 0;
