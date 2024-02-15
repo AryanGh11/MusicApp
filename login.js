@@ -3,11 +3,10 @@ const password = document.querySelector(".password");
 const login = document.querySelector(".login");
 const createAccount = document.querySelector(".create-account");
 const appLogo = document.querySelector(".logo-text");
-const appLogoImage = document.getElementById("app-logo");
 
-appLogoImage.addEventListener("click", () => {
-  window.location.href("web.telegram.org");
-});
+createAccount.addEventListener("click", () =>
+  window.location.href("https://web.telegram.org")
+);
 
 login.addEventListener("click", () => {
   const usernameValue = username.value;
