@@ -4,8 +4,9 @@ const login = document.querySelector(".login");
 const createAccount = document.querySelector(".create-account");
 const appLogo = document.querySelector(".logo-text");
 
-createAccount.addEventListener("click", () =>
-  window.location.href("https://web.telegram.org")
+createAccount.addEventListener(
+  "click",
+  () => (window.location = "https://web.telegram.org")
 );
 
 login.addEventListener("click", () => {
