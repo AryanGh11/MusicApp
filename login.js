@@ -4,11 +4,6 @@ const login = document.querySelector(".login");
 const createAccount = document.querySelector(".create-account");
 const appLogo = document.querySelector(".logo-text");
 
-createAccount.addEventListener(
-  "click",
-  () => (window.location = "https://web.telegram.org")
-);
-
 login.addEventListener("click", () => {
   const usernameValue = username.value;
   const passwordValue = password.value;
